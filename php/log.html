@@ -100,21 +100,21 @@ float:top;
               check_validation();
           }
           function check_validation(){
-              var mail=document.getElementById('as');
-              var pass=document.getElementById('pu');
+              var mail1=document.getElementById('as');
+              var pass1=document.getElementById('pu');
               
             //  document.getElementById("err3").innerHTML="";      
-                if(mail.checkValidity)
+                if(mail1.checkValidity)
               {
                   console.log("required");
-                  document.getElementById("err1").innerHTML=mail.validationMessage;
+                  document.getElementById("err1").innerHTML=mail1.validationMessage;
               }
               else{
                   console.log("right");
                   document.getElementById("err1").innerHTML=" ";   
               }
-              if(pass.checkValidity){
-                   document.getElementById("err2").innerHTML=pass.validationMessage;
+              if(pass1.checkValidity){
+                   document.getElementById("err2").innerHTML=pass1.validationMessage;
               }
               else{
             
